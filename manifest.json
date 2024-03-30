@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "NASA APOD Theme",
+  "version": "1.0",
+  "description": "Set NASA's APOD as your Chrome New Tab theme.",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["input-files/main-files/main.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

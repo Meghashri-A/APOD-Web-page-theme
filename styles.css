@@ -1,0 +1,19 @@
+body {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #apod-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #apod-image img {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  
